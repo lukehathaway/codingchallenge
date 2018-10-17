@@ -1,0 +1,28 @@
+/********************************
+*
+* Breakpoint Mixin
+*
+********************************/
+@mixin breakpoint($bp) {
+  @if $bp == sm {
+    @media all and (min-width: 768px) {
+      @content;
+    }
+  } @else if $bp == md {
+    @media all and (min-width: 992px) {
+      @content;
+    }
+  } @else if $bp == lg {
+    @media all and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $bp == xl {
+    @media all and (min-width: 1440px) {
+      @content;
+    }
+  } @else if $bp == xxl {
+    @media all and (min-width: 1600px) {
+      @content;
+    }
+  }
+}

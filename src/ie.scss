@@ -1,0 +1,44 @@
+/********************************
+*
+* Styles for IE9
+*
+********************************/
+
+.nav-inner-wrapper {
+  display: table;
+  height: 45px;
+  width: 1220px;
+}
+
+.nav-inner-wrapper {
+  .logo-wrapper {
+    display: table-cell;
+    height: 45px;
+    text-align: left;
+    vertical-align: middle;
+    width: 20%;
+  }
+}
+
+.nav-inner-wrapper {
+  ul {
+    display: table-cell;
+    text-align: right;
+    width: 80%;
+  }
+}
+
+.site-wrapper {
+  display: table;
+}
+
+.site-wrapper {
+  aside,
+  section {
+    display: table-cell;
+  }
+
+  aside {
+    vertical-align: top;
+  }
+}

@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: $body-text-color;
+  font: {
+    family: $body-text-font;
+    size: 16px;
+  }
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $color-brand-blue;
+  text-decoration: underline;
+}
+
+.page-container {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  max-width: $container-width;
+  padding: {
+    left: 15px;
+    right: 15px;
+  }
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 65px 15px;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    padding: 65px 0;
+  }
+
+  aside,
+  section {
+    width: 100%;
+  }
+
+  aside {
+    @include breakpoint(md) {
+      width: 25%;
+    }
+  }
+
+  section {
+    padding-bottom: 50px;
+
+    @include breakpoint(md) {
+      padding: {
+        bottom: 0;
+        right: 20px;
+      }
+      width: 75%;
+    }
+  }
+}
+
+/********************************
+*
+* Headings
+*
+********************************/
+
+h1 {
+  color: $color-brand-purple;
+  font: {
+    size: 36px;
+    weight: 300;
+  }
+  margin: 0;
+}
+
+h2 {
+  font: {
+    size: 28px;
+    weight: 300;
+  }
+  line-height: 1;
+  margin: 0;
+
+  .pipe-wrapper {
+    font: {
+      size: 50px;
+      weight: 300;
+    }
+    position: relative;
+    top: 5px;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}
+
+/********************************
+*
+* Buttons
+*
+********************************/
+.login-button {
+  background-color: $color-brand-purple;
+  color: #fff;
+  font: {
+    size: 18px;
+    weight: bold;
+  }
+  margin-bottom: 25px;
+  padding: {
+    bottom: 10px;
+    top: 10px;
+  }
+  width: 220px;
+}
+
+/********************************
+*
+*
+*
+********************************/
+
+.callout-wrapper {
+  background-color: $green;
+  display: flex;
+  margin: {
+    bottom: 50px;
+    top: 30px;
+  }
+  padding: {
+    bottom: 15px;
+    left: 15px;
+    top: 15px;
+  }
+  position: relative;
+
+  .content-wrapper {
+    width: 70%;
+
+    @include breakpoint(sm) {
+      width: 700px;
+    }
+
+    strong {
+      color: $color-brand-purple;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+
+  .image-wrapper {
+    text-align: center;
+    width: 30%;
+
+    img {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+      max-width: 100%;
+      width: 72px;
+
+      @include breakpoint(sm) {
+        position: absolute;
+        right: 40px;
+        top: -100px;
+        width: auto;
+      }
+    }
+  }
+}
+
+/********************************
+*
+* Rates Table
+*
+********************************/
+#rates-table {
+  margin-top: 30px;
+  width: 100%;
+
+  tbody {
+    tr {
+      height: 45px;
+
+      &:nth-of-type(even) {
+        background-color: #eef5f0;
+      }
+
+      &:nth-of-type(odd) {
+        background-color: #ddebe1;
+      }
+
+      &:first-of-type {
+        background-color: transparent;
+        font: {
+          size: 12px;
+          weight: 300;
+        }
+      }
+
+      &:nth-of-type(2) {
+        color: #505050;
+        font: {
+          size: 18px;
+          weight: bold;
+        }
+      }
+
+      .name-wrapper {
+        padding-left: 15px;
+        width: 30%;
+      }
+
+      .apy-wrapper {
+        text-align: right;
+        width: 20%;
+      }
+
+      .earnings-wrapper {
+        padding-right: 20px;
+        text-align: right;
+        width: 35%;
+      }
+    }
+
+    th {
+      color: #505050;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.nav-inner-wrapper {
+  display: table;
+  height: 45px;
+  width: 1220px;
+}
+
+.nav-inner-wrapper .logo-wrapper {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  width: 20%;
+}
+
+.nav-inner-wrapper ul {
+  display: table-cell;
+  text-align: right;
+  width: 80%;
+}
+
+.site-wrapper {
+  display: table;
+}
+
+.site-wrapper main,
+.site-wrapper aside {
+  display: table-cell;
+}
+
+.site-wrapper section {
+  width: 710px;
+}
+
+.callout-wrapper .content-wrapper {
+  max-width: 550px;
+}
+
+.modal-form {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 140px;
+}
+
+.footer-inner-wrapper {
+  display: table;
+  width: 970px;
+}
+
+.copyright-wrapper {
+  display: table-cell;
+}
+
+.footer-nav-wrapper {
+  display: table-cell;
+  text-align: right;
+}
