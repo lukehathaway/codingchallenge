@@ -28,7 +28,7 @@ a {
 .site-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 65px 15px; }
+  padding: 40px 15px; }
   @media all and (min-width: 992px) {
     .site-wrapper {
       flex-direction: row;

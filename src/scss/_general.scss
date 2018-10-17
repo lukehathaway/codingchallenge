@@ -32,7 +32,7 @@ a {
 .site-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 65px 15px;
+  padding: 40px 15px;
 
   @include breakpoint(md) {
     flex-direction: row;
