@@ -36,4 +36,22 @@
       vertical-align: top;
     }
   }
+
+  .callout-wrapper .content-wrapper {
+    max-width: 550px;
+  }
+
+  .footer-inner-wrapper {
+    display: table;
+    width: 970px;
+  }
+
+  .copyright-wrapper {
+    display: table-cell;
+  }
+
+  .footer-nav-wrapper {
+    display: table-cell;
+    text-align: right;
+  }
 }

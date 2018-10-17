@@ -60,6 +60,16 @@ a {
       }
       width: 75%;
     }
+
+    article {
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
   }
 }
 
@@ -107,7 +117,9 @@ h2 {
 ********************************/
 .login-button {
   background-color: $color-brand-purple;
+  border: 0px;
   color: #fff;
+  cursor: pointer;
   font: {
     size: 18px;
     weight: bold;
@@ -117,7 +129,13 @@ h2 {
     bottom: 10px;
     top: 10px;
   }
+  transition: all 200ms linear;
   width: 220px;
+
+  &:hover {
+    background-color: darken($color-brand-purple, 5%);
+    transition: all 200ms linear;
+  }
 }
 
 /********************************
@@ -240,4 +258,13 @@ h2 {
       text-align: left;
     }
   }
+}
+
+.table-footnote {
+  font: {
+    size: 12px;
+    weight: 300;
+  }
+  padding-top: 10px;
+  text-align: right;
 }

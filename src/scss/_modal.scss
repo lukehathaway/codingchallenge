@@ -60,6 +60,7 @@
       input {
         border: 1px solid $color-brand-blue;
         height: 35px;
+        padding-left: 15px;
         width: 200px;
 
         @include breakpoint(sm) {

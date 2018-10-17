@@ -16,13 +16,6 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("sass-ie", function() {
-  return gulp
-    .src("src/ie.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("dist/css"));
-});
-
 gulp.task("watch", function() {
   gulp.watch("src/scss/*.scss", ["sass"]);
   gulp.watch("src/ie.scss", ["sass-ie"]);

@@ -98,6 +98,9 @@
                         <th class="earnings-wrapper">Est. Earnings for 1 Year*</th>
                     </tr>
                 </table>
+                <div class="table-footnote">
+                    *Based on $50,000 deposit.
+                </div>
             </article>
         </section>
         <aside>
@@ -110,24 +113,24 @@
                     <a class="tab" href="#" data-target="archive-content">Archive</a>
                 </div>
                 <div class="content-wrapper active" id="news-content">
-                    <strong>Lorem ipsum dolor</strong>
+                    <a href="#"><strong>Lorem ipsum dolor</strong></a>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-                    <strong>Lorem ipsum dolor</strong>
+                    <a href="#"><strong>Lorem ipsum dolor</strong></a>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-                    <strong>Lorem ipsum dolor</strong>
+                    <a href="#"><strong>Lorem ipsum dolor</strong></a>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 </div>
                 <div class="content-wrapper" id="archive-content">
                     <ul>
-                        <li><strong>Lorem ipsum dolor</strong></li>
-                        <li><strong>Lorem ipsum dolor</strong></li>
-                        <li><strong>Lorem ipsum dolor</strong></li>
-                        <li><strong>Lorem ipsum dolor</strong></li>
-                        <li><strong>Lorem ipsum dolor</strong></li>
-                        <li><strong>Lorem ipsum dolor</strong></li>
-                        <li><strong>Lorem ipsum dolor</strong></li>
+                        <li><a href="#"><strong>Lorem ipsum dolor</strong></a></li>
+                        <li><a href="#"><strong>Lorem ipsum dolor</strong></a></li>
+                        <li><a href="#"><strong>Lorem ipsum dolor</strong></a></li>
+                        <li><a href="#"><strong>Lorem ipsum dolor</strong></a></li>
+                        <li><a href="#"><strong>Lorem ipsum dolor</strong></a></li>
+                        <li><a href="#"><strong>Lorem ipsum dolor</strong></a></li>
+                        <li><a href="#"><strong>Lorem ipsum dolor</strong></a></li>
                     </ul>
                 </div>
             </div>
@@ -145,7 +148,7 @@
                         <a href="#">employee</a>
                     </li>
                     <li>
-                        <a href="#">company</a>
+                        <a class="active" href="#">company</a>
                     </li>
                     <li>
                         <a href="#">services</a>
@@ -160,7 +163,9 @@
     <div class="modal-wrapper">
 
         <div class="modal-form">
-            <div class="close-wrapper" id="modal-close"><img src="img/times.png" alt="Close"></div>
+            <div class="close-wrapper" id="modal-close">
+                <img alt="Close" src="img/times.png" srcset="img/times.png 1x, img/times@2x.png 2x" />
+            </div>
             <div class="header-text">Sign In To Your Account</div>
             <div class="input-wrapper">
                 <label for="username">Username</label>

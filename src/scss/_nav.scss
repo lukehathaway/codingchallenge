@@ -20,6 +20,7 @@ nav {
     height: 30px;
     outline: none;
     position: relative;
+    right: 10px;
     transform: translateY(8px);
     width: 30px;
     z-index: 10;
@@ -29,7 +30,7 @@ nav {
     }
 
     span {
-      background-color: #d7d7d7;
+      background-color: #fff;
       display: block;
       height: 3px;
       margin: 5px 0;

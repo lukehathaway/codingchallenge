@@ -52,6 +52,7 @@
     height: 300px;
     padding: {
       left: 15px;
+      right: 15px;
       top: 30px;
     }
 
@@ -61,6 +62,18 @@
 
     &.active {
       display: block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      font: {
+        size: 14px;
+      }
+      line-height: 22px;
+      margin-top: 5px;
     }
 
     ul {
